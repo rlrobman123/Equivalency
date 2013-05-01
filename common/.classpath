@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Dev Projects/Minecraft/Modding-Things/EE3-Dev/mcp/jars/bin/jinput.jar"/>
+	<classpathentry kind="lib" path="C:/Dev Projects/Minecraft/Modding-Things/EE3-Dev/mcp/jars/bin/lwjgl.jar"/>
+	<classpathentry kind="lib" path="C:/Dev Projects/Minecraft/Modding-Things/EE3-Dev/mcp/jars/bin/lwjgl_util.jar"/>
+	<classpathentry kind="lib" path="C:/Dev Projects/Minecraft/Modding-Things/EE3-Dev/mcp/jars/bin/minecraft.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Minecraft"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

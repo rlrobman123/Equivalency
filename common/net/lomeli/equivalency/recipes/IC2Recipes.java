@@ -20,11 +20,11 @@ public class IC2Recipes
 		UniversalRecipes.ingotBronze.add(bronzeIngot);
 		UniversalRecipes.uranium.add(uraniumDrop);
 		
-		// Resin -> leather
+		// 3 Resin -> leather
 		TransmutationHelper.addRecipe(Item.leather, transmutationStone, new Object[]
-			{ stickyResin });
-		// leather -> Resin
-		TransmutationHelper.addRecipe(stickyResin, transmutationStone, new Object[]
+			{ stickyResin, stickyResin, stickyResin });
+		// leather -> 3 Resin
+		TransmutationHelper.addRecipe(new ItemStack (stickyResin.getItem(), 3), transmutationStone, new Object[]
 			{ Item.leather });
 		
 		// 3 Copper Ingot -> Tin Ingot
@@ -45,5 +45,6 @@ public class IC2Recipes
 		// 2 Uranium -> 1 Diamond
 		TransmutationHelper.addRecipe(Item.diamond, transmutationStone, 
 			new Object[]{uraniumDrop, uraniumDrop});
+		
 	}
 }

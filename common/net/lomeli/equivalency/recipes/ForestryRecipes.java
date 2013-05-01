@@ -20,15 +20,15 @@ public class ForestryRecipes
 		// 3 Copper Ingot -> Tin Ingot
 		TransmutationHelper.addRecipe(tinIngot, transmutationStone, 
 			new Object[]{ copperIngot, copperIngot, copperIngot });
-		// 1 Tin Ingot -> 3 Copper Ingot
+		//  Tin Ingot -> 3 Copper Ingot
 		TransmutationHelper.addRecipe(new ItemStack(copperIngot.getItem(), 3), transmutationStone, 
 			new Object[]{ tinIngot });
 		
-		// 1 Bronze Ingot -> 2 Tin Ingot
-		TransmutationHelper.addRecipe(new ItemStack(tinIngot.getItem(), 2), transmutationStone, 
+		//  Bronze Ingot ->  Tin Ingot
+		TransmutationHelper.addRecipe(new ItemStack(tinIngot.getItem(), 1), transmutationStone, 
 			new Object[]{ bronzeIngot });
-		// 2 Tin Ingot -> 1 Bronze Ingot
+		//  Tin Ingot ->  Bronze Ingot
 		TransmutationHelper.addRecipe(bronzeIngot, transmutationStone, 
-			new Object[]{tinIngot, tinIngot});
+			new Object[]{tinIngot});
 	}
 }

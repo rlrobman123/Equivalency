@@ -26,11 +26,11 @@ public class TERecipes
 		TransmutationHelper.addRecipe(new ItemStack(copperIngot.getItem(), 3), transmutationStone, 
 			new Object[]{ tinIngot });
 		
-		// 2 Silver Ingot -> 1 Lead Ingot
-		TransmutationHelper.addRecipe(new ItemStack(silverIngot.getItem(), 2), 
-			transmutationStone, new Object[]{ leadIngot });
-		// 1 Lead -> 2 Silver Ingot
-		TransmutationHelper.addRecipe(leadIngot, transmutationStone, 
-			new Object[]{ silverIngot, silverIngot });
+		// 1 Silver Ingot -> 2 Lead Ingot
+		TransmutationHelper.addRecipe(silverIngot, 
+			transmutationStone, new Object[]{ leadIngot, leadIngot });
+		// 2 Lead -> 1 Silver Ingot
+		TransmutationHelper.addRecipe(new ItemStack(leadIngot.getItem(), 2), transmutationStone, 
+			new Object[]{ silverIngot});
 	}
 }
